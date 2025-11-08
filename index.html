@@ -132,6 +132,59 @@
     }
   </style>
 
+  <style>
+    /* Make author / affiliation / email / buttons more compact */
+    .publication-authors {
+      margin-bottom: 0.25rem;
+      /* reduce gap below authors line */
+      line-height: 1.15;
+    }
+
+    .publication-authors .author-block {
+      display: inline-block;
+      margin-right: 0.5rem;
+      margin-bottom: 0;
+      /* keep blocks on same line */
+    }
+
+    .publication-authors .author-block a,
+    .publication-authors .author-block .author-name {
+      color: #0a0a0a;
+      /* ensure dark/black text */
+      text-decoration: none;
+    }
+
+    .author-emails {
+      margin-top: 0.18rem !important;
+      /* smaller space above emails */
+      margin-bottom: 0.18rem !important;
+      /* smaller space below emails */
+    }
+
+    .eql-cntrb small {
+      /* tighten the equal-contribution note */
+      margin-top: 0.1rem;
+      display: block;
+    }
+
+    .publication-links {
+      margin-top: 0.25rem;
+      /* reduce gap between emails and buttons */
+    }
+
+    .publication-links .link-block {
+      display: inline-block;
+      margin-right: 0.4rem;
+      margin-bottom: 0;
+      /* keep links compact */
+    }
+
+    /* Slightly reduce main title bottom space so authors sit closer */
+    .publication-title {
+      margin-bottom: 0.35rem;
+    }
+  </style>
+
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
