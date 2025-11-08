@@ -85,6 +85,53 @@
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
+  <!-- Page-specific spacing tweaks -->
+  <style>
+    /* Increase spacing between these major blocks */
+    .section-block,
+    .results-block,
+    .qual-block {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    /* Bring headings closer to their images */
+    .section-block .title.is-3,
+    .results-block .title.is-3,
+    .qual-block .title.is-3 {
+      margin-bottom: 0.35rem;
+    }
+
+    .section-block img,
+    .results-block img,
+    .qual-block img {
+      display: block;
+      margin: 0.25rem auto 0 auto;
+      /* small gap above image */
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Slightly larger gap between blocks on small screens */
+    @media (max-width: 768px) {
+
+      .section-block,
+      .results-block,
+      .qual-block {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .results-block img,
+      .qual-block img,
+      .section-block img {
+        width: 90% !important;
+      }
+    }
+  </style>
+
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
@@ -302,7 +349,7 @@
     <!-- End paper abstract -->
 
     <!-- method Figure -->
-    <section class="hero teaser">
+    <section class="hero teaser section-block">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-10">
@@ -314,7 +361,7 @@
     </section>
 
     <!-- Image carousel -->
-    <section class="hero is-small is-light">
+    <section class="hero is-small is-light results-block">
       <div class="hero-body">
         <div class="container is-max-desktop">
           <h2 class="title is-3 has-text-centered mb-6">More Results of Our Methods</h2>
@@ -351,7 +398,7 @@
     <!-- End image carousel -->
 
     <!-- Image carousel -->
-    <section class="hero is-small is-light">
+    <section class="hero is-small is-light qual-block">
       <div class="hero-body">
         <div class="container is-max-desktop">
           <h2 class="title is-3 has-text-centered mb-6">Qualitative Comparisons</h2>
