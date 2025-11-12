@@ -2,7 +2,7 @@
     <h1> ⭐ V-Shuffle: Zero-Shot Style Transfer via Value Shuffle </h1>
 </div>
 <p align="center">
-    <a href="https://ieeexplore.ieee.org/document/10582893">
+    <a href="https://arxiv.org/abs/2511.06365">
     <img alt="Static Badge" src="https://img.shields.io/badge/Paper-openproject.svg?logo=openproject&color=%23B31B1B">
     </a>
     <a href=""><img src="https://img.shields.io/badge/python-3.8+-aff.svg"></a>
